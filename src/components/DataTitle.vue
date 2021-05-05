@@ -16,7 +16,7 @@ export default {
   props: ['text', 'dataDate'],
   computed:{
     timestamp : function () {
-      return moment(this.dataDate).format('MMMM Do YYYY, h:mm:ss a')
+      return moment(this.dataDate).local().format('MMMM Do YYYY, h:mm:ss a')
     }
   }
 };
